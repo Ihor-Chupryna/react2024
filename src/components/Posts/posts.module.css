@@ -1,0 +1,17 @@
+.postLists {
+    height: 490px;
+    background: #a3b8b8;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    /*border-top: 3px solid black;*/
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    margin: 10px 25px;
+    padding: 0 5px;
+    color: chartreuse;
+    background: dimgrey;
+    width: fit-content;
+}
