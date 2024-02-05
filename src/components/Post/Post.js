@@ -7,7 +7,7 @@ const Post = ({post, getCurrentPost}) => {
     return (
         <div style={{display: 'flex', columnGap: '10px'}}>
             <div>{id}) {title}</div>
-            <button onClick={() => getCurrentPost(post)}>Post-details</button>
+            <button className={css.buttonStyle} onClick={() => getCurrentPost(post)}>Post-details</button>
         </div>
     );
 };
