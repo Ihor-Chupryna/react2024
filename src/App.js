@@ -1,9 +1,10 @@
 import './App.css';
+import { Launches } from "./components/Launches/Launches";
 
 function App() {
   return (
-    <div className="App" style={{color:'red', fontSize:'50px', textAlign:'center'}}>
-       Hello React
+    <div>
+       <Launches/>
     </div>
   );
 }
