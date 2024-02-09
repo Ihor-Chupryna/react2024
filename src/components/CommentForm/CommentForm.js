@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { commentService } from "../../services/commentService";
 
 const CommentForm = () => {
-    const {register, handleSubmit, reset} = useForm();
+    const {register, handleSubmit} = useForm();
 
     const create = (data) => {
         commentService.create(data).then(({data}) => console.log(data))
