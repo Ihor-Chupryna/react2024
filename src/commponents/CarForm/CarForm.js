@@ -12,7 +12,7 @@ const CarForm = ({setTrigger, carForUpdate}) => {
             setValue('price', carForUpdate.price, {shouldValidate: true})
             setValue('year', carForUpdate.year, {shouldValidate: true})
         }
-    }, [carForUpdate]);
+    }, [carForUpdate, setValue]);
 
 
     const submit = async (data) => {
