@@ -16,7 +16,7 @@ const Cars = () => {
     return (
         <div>
             <div style={{textAlign: "center", margin: "15px"}}><CarForm setTrigger={setTrigger}
-                                                                        carForUpdate={carForUpdate}/></div>
+                                                                        carForUpdate={carForUpdate} setCarForUpdate={setCarForUpdate}/></div>
             {cars.map(value => <Car key={value.id} car={value} setCarForUpdate={setCarForUpdate}
                                     setTrigger={setTrigger}/>)}
         </div>
