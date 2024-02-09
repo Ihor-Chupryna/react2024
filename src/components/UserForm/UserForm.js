@@ -3,11 +3,12 @@ import { useForm } from "react-hook-form";
 
 import { userService } from "../../services/userService";
 
-const UserForm = ({curUser}) => {
+const UserForm = () => {
     const {reset, register, handleSubmit} = useForm();
 
     const create = (data) => {
         userService.create(data).then(({data}) => console.log(data))
+        reset()
     }
 
 
