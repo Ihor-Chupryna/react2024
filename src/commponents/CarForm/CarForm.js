@@ -1,10 +1,15 @@
 import React, { useEffect } from 'react';
 import { useForm } from "react-hook-form";
+import { joiResolver } from "@hookform/resolvers/joi";
 
 import { carService } from "../../services/carService";
+import { carValidator } from "../../validators/carValidators";
 
 const CarForm = ({setTrigger, carForUpdate, setCarForUpdate}) => {
-    const {register, handleSubmit, reset, setValue} = useForm();
+    const {register, handleSubmit, reset, setValue, formState: {errors, isValid}} = useForm({
+        mode: 'all',
+        resolver: joiResolver(carValidator)
+    });
 
     useEffect(() => {
         if (carForUpdate) {
@@ -31,7 +36,10 @@ const CarForm = ({setTrigger, carForUpdate, setCarForUpdate}) => {
             <input type="text" placeholder={'brand'} {...register('brand')}/>
             <input type="text" placeholder={'price'} {...register('price')}/>
             <input type="text" placeholder={'year'} {...register('year')}/>
-            <button>{carForUpdate ? 'update' : 'create'}</button>
+            <button disabled={!isValid}>{carForUpdate ? 'update' : 'create'}</button>
+            {errors.brand && <div>{errors.brand.message}</div>}
+            {errors.price && <div>{errors.price.message}</div>}
+            {errors.year && <div>{errors.year.message}</div>}
         </form>
     );
 };
