@@ -34,8 +34,8 @@ const CarForm = ({setTrigger, carForUpdate, setCarForUpdate}) => {
     return (
         <form onSubmit={handleSubmit(submit)}>
             <input type="text" placeholder={'brand'} {...register('brand')}/>
-            <input type="text" placeholder={'price'} {...register('price')}/>
-            <input type="text" placeholder={'year'} {...register('year')}/>
+            <input type="text" placeholder={'price'} {...register('price' , {valueAsNumber:true})}/>
+            <input type="text" placeholder={'year'} {...register('year', {valueAsNumber:true})}/>
             <button disabled={!isValid}>{carForUpdate ? 'update' : 'create'}</button>
             {errors.brand && <div>{errors.brand.message}</div>}
             {errors.price && <div>{errors.price.message}</div>}
