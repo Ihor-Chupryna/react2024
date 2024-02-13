@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import { postService } from "../../services/postServise";
 import css from './PostPage.module.css'
+import { Post } from "../../components/Post/Post";
 
 const PostPage = () => {
     const [post, setPost] = useState(null);
@@ -14,11 +15,7 @@ const PostPage = () => {
 
     return (
         <div className={css.postStyle}>
-            {post && (<div>
-                <div>id :{post.id}</div>
-                <div>title: {post.title} </div>
-                <div>body: {post.body}</div>
-            </div>)}
+            {post && <Post post={post}/>}
         </div>
     );
 };
