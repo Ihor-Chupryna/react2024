@@ -1,0 +1,8 @@
+.postStyle{
+    width: 36vw;
+    padding: 10px;
+    box-sizing: border-box;
+    border-left: 2px solid chocolate;
+    background: bisque;
+    /*border-radius: 10px;*/
+}

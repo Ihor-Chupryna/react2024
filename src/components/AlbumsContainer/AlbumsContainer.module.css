@@ -1,0 +1,8 @@
+.mainAlbumsStyle{
+    background: bisque;
+    padding: 10px;
+}
+
+.albumStyle {
+    border-bottom: 1px solid darkred;
+}

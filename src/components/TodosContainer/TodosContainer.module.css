@@ -1,0 +1,8 @@
+.mainTodosStyle{
+    background: bisque;
+    padding: 10px;
+}
+
+.todoStyle {
+    border-bottom: 1px solid darkred;
+}
