@@ -1,0 +1,19 @@
+.postStyle {
+    display: flex;
+    justify-content: space-between;
+    width: 36vw;
+}
+
+.postStyle div {
+    margin: 2px;
+}
+
+.postStyle button {
+    width: 85px;
+    height: 25px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+    font-style: italic;
+}
+

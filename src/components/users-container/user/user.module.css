@@ -1,0 +1,15 @@
+.userStyle {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+
+}
+
+.userStyle button {
+    width: 85px;
+    height: 25px;
+    color: white;
+    background: black;
+    border-radius: 25px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,15 @@
+.footerStyle {
+    height: 5%;
+    background: black;
+}
+
+.footerStyle p {
+    color: snow;
+    padding: 10px 20px 10px 0;
+    text-align: right;
+}
+
+.footerStyle p:hover {
+    color: red;
+}
+

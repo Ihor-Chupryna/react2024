@@ -1,0 +1,9 @@
+.homePageStyle {
+    padding: 25px 0 0 45px;
+    box-sizing: border-box;
+    font-size: 55px;
+    height: 90vh;
+    background-image: url("../../image/react-img.png");
+    background-size: cover;
+    background-attachment: fixed;
+}

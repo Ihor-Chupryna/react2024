@@ -1,0 +1,38 @@
+.userDetailsMain {
+    height: 20vh;
+    width: 65vw;
+    display: flex;
+    justify-content: center;
+}
+
+.userStyle {
+    width: 33.5%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 6px 0 6px 10px;
+
+}
+
+.userStyle button {
+    margin-top: 6px;
+    height: 25px;
+    width: 135px;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.userStyle div {
+    font-size: 18px;
+    margin: 3px;
+}
+
+.userStyle h3 {
+    font-style: italic;
+    margin-bottom: 3px;
+}
+
+.userStyle span {
+    font-weight: bold;
+}
