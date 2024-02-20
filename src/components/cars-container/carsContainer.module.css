@@ -1,0 +1,68 @@
+.carFormStyle {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 7px 0;
+}
+
+.carFormStyle input {
+    width: 250px;
+    height: 25px;
+    padding: 0 5px;
+    margin: 3px;
+    box-sizing: border-box;
+    font-size: 15px;
+    box-shadow: 1px 1px 10px 1px;
+}
+
+.carFormStyle button {
+    width: 220px;
+    height: 25px;
+    border-radius: 15px;
+    background: gold;
+    color: blue;
+    margin-top: 7px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.carsMainStile {
+    height: 71vh;
+    margin: 0 15px;
+}
+
+.carStyle {
+    margin: 2px;
+    border-left: 1px solid darkblue;
+    box-sizing: border-box;
+    padding: 2px 7px;
+}
+
+.carStyle p {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.carStyle span {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vw;
+}
+
+.pagination button {
+    width: 100px;
+    height: 25px;
+    font-size: 18px;
+    border-radius: 25px;
+    color: black;
+    background: cornflowerblue;
+    margin: 0 10px;
+}

@@ -1,0 +1,22 @@
+.headerStyle {
+    height: 50px;
+    background: darkblue;
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerStyle h1 {
+    color: gold;
+}
+
+.headerStyle a {
+    font-size: 25px;
+    color: gold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.headerStyle a[class='active'] {
+    color: red;
+}

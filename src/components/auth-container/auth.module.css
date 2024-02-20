@@ -1,0 +1,36 @@
+.authFormStyle {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.authFormStyle input {
+    width: 250px;
+    height: 25px;
+    padding: 0 5px;
+    margin: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+    box-shadow: 1px 1px 10px 1px;
+}
+
+.authFormStyle button {
+    width: 220px;
+    height: 25px;
+    border-radius: 15px;
+    background: blue;
+    color: gold;
+    margin-top: 7px;
+    box-sizing: border-box;
+}
+
+.error  {
+    margin: 20px 0;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
