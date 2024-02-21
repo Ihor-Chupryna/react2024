@@ -3,6 +3,7 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import { AuthLayout, MainLayout } from "./layouts";
 import { PublicLayout } from "./layouts/PublicLayout";
 import { CarsPage, LoginPage, RegisterPage } from "./pages";
+import { AuthProvider } from "./hoc";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
                 ]
             },
             {
-                element: <AuthLayout/>, children: [
+                element: <AuthProvider><AuthLayout/></AuthProvider>, children: [
                     {
                         path: 'cars', element: <CarsPage/>
                     }

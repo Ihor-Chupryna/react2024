@@ -20,3 +20,23 @@
 .headerStyle a[class='active'] {
     color: red;
 }
+
+.logoutStyle {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.logoutStyle p {
+    color: snow;
+    font-size: 17px;
+}
+
+.logoutStyle button {
+    width: 60px;
+    color: darkblue;
+    font-size: 15px;
+
+}

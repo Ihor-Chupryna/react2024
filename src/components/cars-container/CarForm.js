@@ -1,9 +1,10 @@
 import { useForm } from "react-hook-form";
 import { joiResolver } from "@hookform/resolvers/joi";
+import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 
 import { carValidator } from "../../validators";
-import { carService } from "../../services";
+import { authService, carService } from "../../services";
 import { Context } from "../../hoc";
 import css from './carsContainer.module.css';
 
@@ -13,12 +14,21 @@ const CarForm = () => {
         mode: "all",
         resolver: joiResolver(carValidator)
     });
-    const {changeTrigger} = useContext(Context)
+    const {changeTrigger} = useContext(Context);
+    const navigate = useNavigate();
 
     const createCar = async (data) => {
-        await carService.create(data);
-        changeTrigger()
-        reset()
+        try{
+            await carService.create(data);
+            changeTrigger()
+            reset()
+        } catch (e) {
+            if (e.response.status === 401) {
+                authService.deleteToken()
+                navigate('/login')
+            }
+        }
+
     }
 
     return (

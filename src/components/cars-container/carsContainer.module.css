@@ -29,11 +29,20 @@
 }
 
 .carsMainStile {
-    height: 71vh;
-    margin: 0 15px;
+    width: 550px;
+    height: 70vh;
+    margin: 0 15px 15px 65px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid darkblue;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .carStyle {
+    width: 250px;
+    height: 100px;
     margin: 2px;
     border-left: 1px solid darkblue;
     box-sizing: border-box;
@@ -41,7 +50,7 @@
 }
 
 .carStyle p {
-    font-size: 17px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -62,7 +71,7 @@
     height: 25px;
     font-size: 18px;
     border-radius: 25px;
-    color: black;
-    background: cornflowerblue;
+    color: darkblue;
+    background: snow;
     margin: 0 10px;
 }
