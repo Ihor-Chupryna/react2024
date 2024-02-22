@@ -1,0 +1,27 @@
+.episodeStyle {
+    width: 25%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 8px 10px 8px 20px;
+    font-size: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: column;
+    row-gap: 7px;
+    font-style: italic;
+}
+
+.episodeStyle:hover {
+    background: darkgrey;
+    cursor: pointer;
+}
+
+.episodeStyle span {
+    color: darkred;
+    font-size: 23px;
+}
+
+.episodeStyle div{
+    width: 90%;
+}

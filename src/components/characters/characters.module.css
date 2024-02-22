@@ -1,0 +1,16 @@
+.charactersMainStyle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.backButton {
+    width: 70px;
+    height: 30px;
+    background: black;
+    color: snow;
+    margin: 10px 0 10px 95vw;
+    border-radius: 8px;
+}

@@ -1,0 +1,20 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.pagination button {
+    background: black;
+    color: snow;
+    width: 100px;
+    height: 25px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.pagination button:disabled {
+    background: darkgrey;
+}

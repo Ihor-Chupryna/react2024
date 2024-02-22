@@ -1,0 +1,11 @@
+.headerStyle {
+    height: 60px;
+    background: black;
+}
+
+.headerStyle h1 {
+    color: snow;
+    text-align: center;
+    font-size: 60px;
+    font-weight: normal;
+}
