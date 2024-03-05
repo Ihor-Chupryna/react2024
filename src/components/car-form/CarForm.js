@@ -23,18 +23,18 @@ const CarForm = () => {
             setValue('price', carForUpdate.price)
             setValue('year', carForUpdate.year)
         }
-    }, [carForUpdate, setValue()]);
+    }, [carForUpdate, setValue]);
 
     const create = async (car) => {
         await carService.create(car)
-        await carService.getAll().then(({data}) => dispatch(carsActions.setCars(data)))
+        dispatch(carsActions.setCarTrigger())
         reset()
     }
 
     const update = async (car) => {
         await carService.update(carForUpdate.id, car)
-        await carService.getAll().then(({data}) => dispatch(carsActions.setCars(data)))
-        await dispatch(carsActions.setCarForUpdate(null))
+        dispatch(carsActions.setCarTrigger())
+        dispatch(carsActions.setCarForUpdate(null))
         reset()
     }
 

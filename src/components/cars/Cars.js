@@ -7,13 +7,13 @@ import { Car } from "../car/Car";
 
 
 const Cars = () => {
-    const {cars} = useSelector(state => state.carsReducer)
+    const {cars, carTrigger} = useSelector(state => state.carsReducer)
     const dispatch = useDispatch();
 
     useEffect(() => {
         carService.getAll().then(({data}) => dispatch(carsActions.setCars(data)))
 
-    }, []);
+    }, [carTrigger, dispatch]);
 
     return (
         <div>
