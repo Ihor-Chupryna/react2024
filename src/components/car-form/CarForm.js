@@ -8,9 +8,10 @@ import { carsActions } from "../../store/slices";
 const CarForm = () => {
     const {
         reset, register,
-        formState: {errors, isValid,}, setValue,
+        setValue,
         handleSubmit
-    } = useForm({
+    }
+        = useForm({
         mode: "all"
     });
     const dispatch = useDispatch();
