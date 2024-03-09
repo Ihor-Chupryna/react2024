@@ -12,7 +12,6 @@ const Cars = () => {
         dispatch(carActions.getAll())
     }, [trigger]);
 
-
     return (
         <div>
             {cars.map(value => <Car key={value.id} car={value}/>)}

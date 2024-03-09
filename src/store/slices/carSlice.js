@@ -71,8 +71,7 @@ const carSlice = createSlice({
             .addCase(getAll.fulfilled, (state, action) => {
                 state.cars = action.payload
             })
-            .addCase(create.fulfilled, () => {
-            })
+
             .addCase(update.fulfilled, (state, action) => {
                 state.carForUpdate = action.payload
             })
